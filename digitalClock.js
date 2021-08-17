@@ -34,19 +34,31 @@ function updateTime() {
 
   date.innerHTML = `${dates}/${months}/${years}`;
 
-  let days=T.getDay();
-  let DAY="";
+  let days = T.getDay();
+  let DAY = "";
 
-  switch(days){
-    case 0: DAY="Munday";break;
-    case 1: DAY="Monday";break;
-    case 2:DAY="Tuesday" ;break;
-    case 3: DAY="Wednesday";break;
-    case 4: DAY ="Thurday";break;
-    case 5: DAY ="Friday"; break;
-    case 6: DAY ="Saturday"; break;
-
+  switch (days) {
+    case 0:
+      DAY = "Munday";
+      break;
+    case 1:
+      DAY = "Monday";
+      break;
+    case 2:
+      DAY = "Tuesday";
+      break;
+    case 3:
+      DAY = "Wednesday";
+      break;
+    case 4:
+      DAY = "Thurday";
+      break;
+    case 5:
+      DAY = "Friday";
+      break;
+    case 6:
+      DAY = "Saturday";
+      break;
   }
-  day.innerHTML=DAY;
-
+  day.innerHTML = DAY;
 }
